@@ -57,12 +57,12 @@ public class message extends Thread
 						.replaceAll("%OnlinePlayer%", "" + one_player_number)
 						.replaceAll("%PlayerList%", player_onserver.replace("[", "").replace("]", ""));
 				All_Server_message = All_Server_message + One_Server_message;
-			}
-			Send_message = Send_message.replaceAll("%Player%", "" + all_player_number)
-					.replaceAll("%Server%", All_Server_message);
-			logs logs = new logs();
-			logs.log_write(Send_message);
+			}			
 		}
+		Send_message = Send_message.replaceAll("%Player%", "" + all_player_number)
+					.replaceAll("%Server%", All_Server_message);
+		logs logs = new logs();
+		logs.log_write(Send_message);
 	}
 	@Override
 	public void run()

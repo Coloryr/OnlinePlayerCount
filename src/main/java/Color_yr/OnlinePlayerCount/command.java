@@ -18,8 +18,10 @@ public class command extends Command
 		{
 			if(sender.hasPermission("opc.admin"))
 			{
+				OnlinePlayerCount.reloadConfig();
 				sender.sendMessage(new TextComponent("[OnlinePlayerCount]日志内容： " + OnlinePlayerCount.SaveMessage));
-				sender.sendMessage(new TextComponent("[OnlinePlayerCount]日志内容： "));
+				sender.sendMessage(new TextComponent("[OnlinePlayerCount]日志内容： " + OnlinePlayerCount.SaveServer));
+				sender.sendMessage(new TextComponent("[OnlinePlayerCount]记录间隔： " + OnlinePlayerCount.SaveTime));
 				return;
 			} 
 			else 
@@ -48,7 +50,7 @@ public class command extends Command
 		}
 		else
 		{
-			sender.sendMessage(new TextComponent("搂d[Minecraft_QQ]搂c閿欒锛岃浣跨敤/qq help 鑾峰彇甯姪"));
+			sender.sendMessage(new TextComponent("[OnlinePlayerCount]请输入/opc help获取帮助"));
 			return;
 		}
 	}

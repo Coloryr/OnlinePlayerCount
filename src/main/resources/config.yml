@@ -2,10 +2,10 @@
 Save:
   #变量说明：
   #%Player%所以服务器在线总数，%Server%子服在线人数
-  Message: 总数：%Player%，%Server%
+  Message: "总数：%Player%，%Server%"
   #变量说明：
   #%ServerName%子服名称，%OnlinePlayer%子服在线人数，%PlayerList%子服玩家列表
-  Server: 子服：[(%ServerName%)|%OnlinePlayer%|%PlayerList%]
+  Server: "[(%ServerName%)|%OnlinePlayer%|%PlayerList%]"
   #保存延迟，单位分钟
   Time: 30
 #子服别称
